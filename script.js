@@ -1,5 +1,5 @@
 // Инициализация Telegram WebApp
-/*const tg = window.Telegram?.WebApp;
+const tg = window.Telegram?.WebApp;
 if (tg) {
   tg.ready();
   tg.expand();
@@ -8,7 +8,7 @@ if (tg) {
  if (availableScreenWidth < 1440 && availableScreenHeight < 3220){
 tg.requestFullscreen();
  }
-}*/
+}
 
 // Анимация текста в пузыре
 const speech = document.getElementById("speech");
@@ -494,4 +494,5 @@ window.addEventListener("popstate", (e) => {
   if (e.state?.page) {
     showPage(e.state.page);
   }
+
 });
